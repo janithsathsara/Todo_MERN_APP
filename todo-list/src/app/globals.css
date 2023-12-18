@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-style: none;
+}
+
+body {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  height: 100vh;
+}
+
+.task-Button {
+  display: flex;
+  background-color: blue;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  height: 3rem;
+  width: 300px;
+}
+
+.task-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.Tasks-Table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Tasks-Table th,
+.Tasks-Table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  width: 200px;
+}
+
+.Tasks-Table th {
+  background-color: #f2f2f2;
+}
+
+.heading-container {
+  display: flex;
+}
+
+.heading-container h3,
+.task-value,
+.task-icons {
+  padding-left: 35px;
+}
+
+.heading-container {
+  padding-bottom: 20px;
+}
