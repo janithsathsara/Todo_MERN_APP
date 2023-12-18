@@ -32,9 +32,9 @@ const Task: React.FC<TaskProps> = (props) => {
   };
   return (
     <div className="heading-container">
-      <p className="task-value">{props.task.title}</p>
-      <p className="task-value">{props.task.description}</p>
-      <div className="task-icons">
+      <p className="text-field strong">{props.task.title}</p>
+      <p className="text-field">{props.task.description}</p>
+      <div className="icon">
         <MdDelete onClick={handleDelete} />
       </div>
     </div>

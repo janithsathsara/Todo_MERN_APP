@@ -6,8 +6,8 @@ const TaskButton = () => {
   return (
     <div className="task-Button">
       <Link href="/AddTask" className="task-link">
-        <h1>
-          Add a task <FaPlus size={25} />
+        <h1 className="text-white">
+          Add a task <FaPlus size={25} color={"white"} />
         </h1>
       </Link>
     </div>

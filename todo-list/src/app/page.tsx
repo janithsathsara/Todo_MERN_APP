@@ -6,7 +6,7 @@ import TaskButton from "./components/TaskButton";
 
 export default function Home() {
   return (
-    <main>
+    <main className="main-element">
       <TaskButton />
       <TasksList />
     </main>

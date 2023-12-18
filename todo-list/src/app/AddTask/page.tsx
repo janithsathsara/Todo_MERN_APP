@@ -20,24 +20,26 @@ const AddTask = () => {
   };
   const handleSubmitNewTask = async (task: any) => {
     task.preventDefault();
-    try {
-      const response = await fetch("http://localhost:4000/TasksData", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(newTaskValue),
-      });
-      if (!response.ok) {
-        throw new Error("Error posting data");
+    if (!(newTaskValue.title === "")) {
+      try {
+        const response = await fetch("http://localhost:4000/TasksData", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(newTaskValue),
+        });
+        if (!response.ok) {
+          throw new Error("Error posting data");
+        }
+      } catch (error: any) {
+        console.error("Error:", error.message);
       }
-    } catch (error: any) {
-      console.error("Error:", error.message);
+      router.push("/");
     }
-    router.push("/");
   };
   return (
-    <form onSubmit={handleSubmitNewTask}>
+    <form onSubmit={handleSubmitNewTask} className="form-container">
       <h4>Task</h4>
       <input
         type="text"

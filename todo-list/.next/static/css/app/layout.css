@@ -74,62 +74,108 @@
   padding: 0;
   margin: 0;
   font-style: none;
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
 }
 
 body {
   display: flex;
-  /* align-items: center; */
+  flex-direction: column;
+}
+.main-element {
   justify-content: center;
-  height: 100vh;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .task-Button {
-  display: flex;
-  background-color: blue;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  align-items: center;
+  margin: 20px;
+  padding: 4px;
   justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 20vw;
+  background-color: #38bdf8;
+  font-color: white;
   border-radius: 5px;
-  height: 3rem;
-  width: 300px;
 }
 
 .task-link {
-  text-decoration: none;
-  color: #fff;
-  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
 }
 
-.Tasks-Table {
-  width: 100%;
-  border-collapse: collapse;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.text-white {
+  color: white;
 }
 
-.Tasks-Table th,
-.Tasks-Table td {
-  padding: 12px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
-  width: 200px;
-}
-
-.Tasks-Table th {
-  background-color: #f2f2f2;
-}
-
-.heading-container {
+.form-container {
+  padding-top: 100px;
+  width: 400px;
+  margin: 0 auto;
   display: flex;
+  flex-direction: column;
 }
 
-.heading-container h3,
-.task-value,
-.task-icons {
-  padding-left: 35px;
+.form-container input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.form-container input[type="submit"] {
+  background-color: #38bdf8; /* Green */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-container h4 {
+  justify-content: center;
+  width: 100%;
+  padding: 5px;
+  font-size: 1.5rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+.Tasks-List {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+  border-radius: 3px;
+}
+
+.icon {
+  display: block;
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .heading-container {
-  padding-bottom: 20px;
+  background-color: #7dd3fc;
+  border-radius: 5px;
+}
+
+.strong {
+  font-size: 1.75rem;
 }
 

@@ -24,10 +24,7 @@ const TasksList = () => {
 
   return (
     <div className="Tasks-List">
-      <div className="heading-container">
-        <h3>Tasks</h3>
-        <h3>Actions</h3>
-      </div>
+      <h3 className="Title">Tasks</h3>
       {taskValue.map((props) => (
         <Task key={props._id} task={props} />
       ))}
